@@ -1,0 +1,9 @@
+{
+    "name": "kauelima21/devmedia-blog",
+    "description": "Prova para desenvolvedor php da Devmedia. Feito por mim apenas para estudo.",
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        }
+    }
+}
