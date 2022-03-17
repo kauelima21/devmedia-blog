@@ -49,7 +49,6 @@ ul {
 }
 
 @media (max-width: 1090px) {
-  
 }
 
 .header_nav ul li a {
@@ -161,4 +160,104 @@ ul {
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
+}
+.form_news {
+  grid-column: 1 / -1;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form_news h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.form_news div {
+  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.form_news div label {
+  align-items: start;
+  font-size: 1.25rem;
+  padding: 10px 10px 10px 0px;
+}
+
+.form_news .form_item {
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+}
+
+.form_news button {
+  padding: 15px 0;
+  width: 300px;
+  cursor: pointer;
+  font-size: 1.75rem;
+  font-weight: bold;
+  background-color: #ccc;
+  border-radius: 15px;
+  border: none;
+}
+
+.form_news button:hover {
+  background-color: rgb(138, 136, 136);
+}
+
+.form_news > a {
+  color: black;
+}
+
+.form_news > a:active {
+  color: black;
+}
+.main_content > section {
+  grid-template-columns: 150px repeat(2, 1fr);
+}
+
+#delete_btn {
+  background-color: red;
+  top: 80px;
+}
+
+.main_content section nav {
+  position: relative;
+}
+
+.main_content section nav a {
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  align-items: start;
+  background-color: blue;
+  min-width: 50px;
+  color: #fff;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.main_content section nav a:hover {
+  margin-left: 10px;
+}
+
+.main_content section article {
+  grid-column: 2 / -1;
+  padding: 30px;
+  background-color: #fff;
+  min-height: 50vh;
+}
+
+.main_content section article h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
 }

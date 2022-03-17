@@ -4,6 +4,9 @@
     "autoload": {
         "psr-4": {
             "Source\\": "source/"
-        }
+        },
+        "files": [
+            "source/Support/Helpers.php"
+        ]
     }
 }
