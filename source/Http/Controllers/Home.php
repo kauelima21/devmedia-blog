@@ -14,15 +14,13 @@ class Home
 
     public function handler()
     {
-        echo $this->view->render("_base", [
+        echo $this->view->render("newsCard.html", [
             "linkCss" => loadAsset("css/styles.css"),
             "homeLink" => url("/"),
             "newsRegisterLink" => url("/cadastrar/noticia"),
             "categoryRegisterLink" => url("/cadastrar/categoria"),
             "loginLink" => url("/login"),
-            "content" => $this->view->render("newsCard", [
-                "newsCardLink" => url("/noticia/:id")
-            ])
+            "newsCardLink" => url("/noticia/:id")
         ]);
     }
 }

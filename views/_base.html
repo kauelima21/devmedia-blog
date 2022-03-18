@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Inicial</title>
-    <link rel="stylesheet" href="{{linkCss}}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-  </head>
-  <body>
-    <header class="header">
-      <h1><a href="{{homeLink}}">LOGO</a></h1>
 
-      <nav class="header_nav">
-        <ul>
-          <li><a href="{{newsRegisterLink}}">Cadastrar noticias</a></li>
-          <li><a href="{{categoryRegisterLink}}">Cadastrar categorias</a></li>
-          <li><a href="{{homeLink}}">Exibir noticias</a></li>
-          <li><a href="{{loginLink}}}}">Entrar</a></li>
-          <li>
-            <form action="">
-              <input type="text" name="blog_search" placeholder="Pesquisar..." class="input_search" />
-              <button>
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina Inicial</title>
+  <link rel="stylesheet" href="{{linkCss}}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
 
-    <main class="main_content">
-      <section>
-          {{content}}
-      </section>
-    </main>
+<body>
+  <header class="header">
+    <h1><a href="{{homeLink}}">LOGO</a></h1>
 
-    <footer class="footer">
-      <h3>Desenvolvido por Programador</h3>
-    </footer>
-  </body>
+    <nav class="header_nav">
+      <ul>
+        <li><a href="{{newsRegisterLink}}">Cadastrar noticias</a></li>
+        <li><a href="{{categoryRegisterLink}}">Cadastrar categorias</a></li>
+        <li><a href="{{homeLink}}">Exibir noticias</a></li>
+        <li><a href="{{loginLink}}}}">Entrar</a></li>
+        <li>
+          <form action="">
+            <input type="text" name="blog_search" placeholder="Pesquisar..." class="input_search" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main_content">
+    <section>
+      {{content}}
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h3>Desenvolvido por Programador</h3>
+  </footer>
+</body>
+
 </html>
