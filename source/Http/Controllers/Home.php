@@ -19,9 +19,10 @@ class Home
             "homeLink" => url("/"),
             "newsRegisterLink" => url("/cadastrar/noticia"),
             "categoryRegisterLink" => url("/cadastrar/categoria"),
-            "newsCardLink" => url("/noticia/:id"),
             "loginLink" => url("/login"),
-            "content" => $this->view->render("newsCard", [])
+            "content" => $this->view->render("newsCard", [
+                "newsCardLink" => url("/noticia/:id")
+            ])
         ]);
     }
 }
